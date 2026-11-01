@@ -3,64 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #dfdbdb;
-        }
-        table {
-            width: 100%;
-            border-spacing: 5px;
-        }
-        input, textarea {
-            width: 95%;
-            padding: 10px;
-            border: 2px solid #c5c5b5;
-            box-sizing: border-box;
-        }
-        textarea {
-            height: 150px;
-            resize: none;
-        }
-        button {
-            padding: 8px 15px;
-            font-size: 18px;
-            background-color: #0f37c8;
-            border: 2px solid #999;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 30%;
-        }
-    </style>
-
-
+    <title>Tabelas</title>
 </head>
 <body>
-    <h1>Formulário de Contacto</h1>
-    <form action="contacto.php" class="formulario" method="post">
-        <table>
+    <h1>Exemplo de Tabela</h1>
+    <table border 1>
+        <thead>
+            <tr >
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody >
             <tr>
-               
-                <td><input type="text" name="nome" placeholder="Digite seu nome" required class="form-control"></td>
+                <td>Wolkswagen</td>
+                <td>Golf</td>
+                <td>2009</td>
+                <td>38.500</td>
             </tr>
             <tr>
-                
-                <td><input type="email" name="email" placeholder="Digite seu email" required class="form-control"></td>
+                <td>Fiat</td>
+                <td>Palio</td>
+                <td>2010</td>
+                <td>19.700</td>
             </tr>
             <tr>
-                
-                <td><input type="text" name="assunto" placeholder="Digite o assunto" required class="form-control"></td>
+                <td>Honda</td>
+                <td>Civic</td>
+                <td>2012</td>
+                <td>61.500</td>
             </tr>
+        </tbody>
+       
             <tr>
-                
-                <td><textarea name="mensagem" placeholder="Digite sua mensagem" required class="form-control"></textarea></td>
+                <td colspan="4">O melhor preço da banda</td>
             </tr>
-            <tfoot>
-            <tr>
-                <td colspan="2"><button type="submit">Enviar</button></td>
-            </tr></tfoot>
-        </table>
-    </form>
+            
+            
+
+    </table>
+
+    
 </body>
 </html>

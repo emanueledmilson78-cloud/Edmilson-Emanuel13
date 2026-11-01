@@ -3,45 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="02.css">
-    <title>Formulário</title>
+    <title>Tabelas</title>
 </head>
 <body>
-    <main class="login">
-        <h1>Login</h1>
-        <hr>
-        
-    
-        <form action="login.php" method="post" name="Login">
-            <p>
-                <label for="Seu-email">Seu e-mail:</label><br>
-                <input type="email" id="Seu-email" name="Seu-email" required placeholder="Digite o seu e-mail">
-            </p>
-            <p>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" required placeholder="Digite a sua password">
-            </p>
-            <p>
-                <label for="remember-me" class="opcao">
-                    <input type="checkbox" id="remember-me" name="remember-me">
-                    Lembrar-se de mim
-                </label>
-            </p>
-            <p>
-                <button type="submit" value="Login">
-                    Logar
-                </button>
-            </p>
-
-        </form>
-        <footer>
-            <p>
-                Ainda não tem uma conta?
-                <a href="o5.html">Crie uma aqui</a>
-            </p>
-        </footer>
-
-        
-    </main>
+    <table border 1>
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Produto</th>
+                <th>Preço</th>
+        </thead>
+        <tbody >
+            <tr >
+                <td rowspan="3">Multimídia</td>
+                <td>Headphone</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Webcam</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Placa de video 512MB</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
