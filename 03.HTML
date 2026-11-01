@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dfdbdb;
+        }
+        table {
+            width: 100%;
+            border-spacing: 5px;
+        }
+        input, textarea {
+            width: 95%;
+            padding: 10px;
+            border: 2px solid #c5c5b5;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+        button {
+            padding: 8px 15px;
+            font-size: 18px;
+            background-color: #0f37c8;
+            border: 2px solid #999;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 30%;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Formulário de Contacto</h1>
+    <form action="contacto.php" class="formulario" method="post">
+        <table>
+            <tr>
+               
+                <td><input type="text" name="nome" placeholder="Digite seu nome" required class="form-control"></td>
+            </tr>
+            <tr>
+                
+                <td><input type="email" name="email" placeholder="Digite seu email" required class="form-control"></td>
+            </tr>
+            <tr>
+                
+                <td><input type="text" name="assunto" placeholder="Digite o assunto" required class="form-control"></td>
+            </tr>
+            <tr>
+                
+                <td><textarea name="mensagem" placeholder="Digite sua mensagem" required class="form-control"></textarea></td>
+            </tr>
+            <tfoot>
+            <tr>
+                <td colspan="2"><button type="submit">Enviar</button></td>
+            </tr></tfoot>
+        </table>
+    </form>
+</body>
+</html>

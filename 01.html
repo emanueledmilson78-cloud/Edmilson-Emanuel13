@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+            <label for="nome">Username </label>:</label><br>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+        <p>
+            <label for="password">Password </label>:</label><br>
+            <input type="password" id="password" name="password" required>
+        </p>
+        <p><label for="Re-type_pass">Re-type Password </label>:</label><br>
+            <input type="password" id="Re-type_pass" name="Re-type_pass" required>
+        </p>
+        <p>
+            <label for="email">Email </label>:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Personal Details</legend>
+        <p><label for="website">Website </label>:</label><br>
+            <input type="url" id="website" name="website">
+        </p>
+        <p><label for="Age">Age</label><br>
+            <input type="number" id="Age" name="Age" min="0" max="120">
+        </p>
+        <p><label for="Monthly_salary">Monthly Salary</label><br>
+            <input type="range" id="Monthly_salary" name="Monthly_salary" >
+        </p>
+    </fieldset>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 1 - Login</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #1c2a40;
+    }
+    .login {
+      width: 900px;
+      max-width: 100%;
+      min-height: 390px;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #cbd6e3;
+      box-shadow: 0 12px 30px rgba(20, 35, 55, .12);
+    }
+    .apresentacao {
+      padding: 42px 38px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+      background: #1b293f;
+    }
+    .logo { font-size: 27px; font-weight: bold; }
+    .slogan { margin-top: 4px; color: #b9c8dc; font-size: 11px; }
+    h1 { margin: 25px 0 12px; font-size: 27px; line-height: 1.25; }
+    .descricao { color: #d5deea; font-size: 13px; line-height: 1.7; }
+    hr { width: 100%; margin: 28px 0 18px; border: 0; border-top: 1px solid #65738a; }
+    .pergunta { margin: 0 0 10px; color: #c4cede; font-size: 12px; }
+    .apresentacao a { color: #fff; font-size: 13px; font-weight: bold; text-decoration: none; }
+    .formulario {
+      padding: 42px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
+    }
+    h2 { margin: 0 0 8px; font-size: 23px; }
+    .instrucao { margin: 0 0 24px; color: #8492a7; font-size: 12px; }
+    label { display: block; margin: 15px 0 7px; font-size: 11px; font-weight: bold; }
+    input {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #d5deea;
+      border-radius: 5px;
+      outline: none;
+      font-size: 13px;
+    }
+    input:focus { border-color: #3975ff; }
+    button {
+      width: 100%;
+      margin-top: 22px;
+      padding: 13px;
+      border: 0;
+      border-radius: 5px;
+      background: #1b293f;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    @media (max-width: 650px) {
+      .login { grid-template-columns: 1fr; padding: 12px; }
+      .apresentacao, .formulario { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="login">
+    <section class="apresentacao">
+      <div class="logo">M74</div>
+      <div class="slogan">Gestão Inteligente</div>
+      <h1>Bem-vindo<br>de volta</h1>
+      <p class="descricao">Aceda ao seu painel e gira os seus produtos, clientes e vendas de forma simples.</p>
+      <hr>
+      <p class="pergunta">Ainda não tem conta?</p>
+      <a href="#">Criar conta gratuita →</a>
+    </section>
+
+    <section class="formulario">
+      <h2>Entrar</h2>
+      <p class="instrucao">Introduza as suas credenciais para continuar.</p>
+      <form>
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" placeholder="seu@email.com">
+        <label for="senha">SENHA</label>
+        <input type="password" id="senha" placeholder="••••••••">
+        <button type="button">Entrar&nbsp; →</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

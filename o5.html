@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário MX Studio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 590px;
+            border: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #168fc4;
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 5px;
+        }
+
+        td:first-child {
+            background-color: #e2f2fc;
+            text-align: right;
+            padding: 10px;
+            width: 110px;
+        }
+
+        input, textarea {
+            width: 95%;
+            padding: 10px;
+            border: 2px solid #c5c5b5;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .botao {
+            text-align: right;
+            padding: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            font-size: 18px;
+            background-color: #f5f5e8;
+            border: 2px solid #999;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <h2>Formulário MX Studio</h2>
+
+    <table>
+        <tr>
+            <td>Seu nome:</td>
+            <td><input type="text" name="nome"></td>
+        </tr>
+
+        <tr>
+            <td>Seu email:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+
+        <tr>
+            <td>Assunto:</td>
+            <td><input type="text" name="assunto"></td>
+        </tr>
+
+        <tr>
+            <td>Mensagem:</td>
+            <td><textarea name="mensagem"></textarea></td>
+        </tr>
+    </table>
+
+    <div class="botao">
+        <button type="submit">enviar</button>
+    </div>
+</form>
+
+</body>
+</html>

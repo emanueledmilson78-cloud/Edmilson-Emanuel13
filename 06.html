@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 2 - Criar conta</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #1c2a40;
+    }
+    .cadastro {
+      width: 900px;
+      max-width: 100%;
+      min-height: 500px;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #101a2e;
+      box-shadow: 0 12px 30px rgba(20, 35, 55, .12);
+    }
+    .apresentacao {
+      padding: 42px 38px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+      background: #1b293f;
+    }
+    .logo { font-size: 27px; font-weight: bold; }
+    .slogan { margin-top: 4px; color: #b9c8dc; font-size: 11px; }
+    .icone {
+      width: 48px;
+      height: 48px;
+      margin-top: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: #1760ff;
+      color: white;
+      font-size: 23px;
+    }
+    h1 { margin: 22px 0 12px; font-size: 25px; line-height: 1.3; }
+    .descricao { color: #c5d0df; font-size: 12px; line-height: 1.7; }
+    hr { width: 100%; margin: 28px 0 18px; border: 0; border-top: 1px solid #35445a; }
+    .pergunta { margin: 0 0 10px; color: #aebbd0; font-size: 12px; }
+    .apresentacao a { color: #fff; font-size: 13px; font-weight: bold; text-decoration: none; }
+    .formulario {
+      padding: 32px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
+    }
+    h2 { margin: 0 0 7px; font-size: 23px; }
+    .instrucao { margin: 0 0 16px; color: #8492a7; font-size: 12px; }
+    label { display: block; margin: 12px 0 6px; font-size: 10px; font-weight: bold; }
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d5deea;
+      border-radius: 5px;
+      outline: none;
+      background: #fff;
+      font-size: 12px;
+    }
+    input:focus, select:focus { border-color: #3975ff; }
+    button {
+      width: 100%;
+      margin-top: 18px;
+      padding: 13px;
+      border: 0;
+      border-radius: 5px;
+      background: #1760ff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .voltar { display: inline-block; margin-top: 17px; color: #65758c; font-size: 12px; text-decoration: none; }
+    @media (max-width: 650px) {
+      .cadastro { grid-template-columns: 1fr; padding: 12px; }
+      .apresentacao, .formulario { padding: 28px 24px; }
+      .icone { margin-top: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="cadastro">
+    <section class="apresentacao">
+      <div class="logo">M74</div>
+      <div class="slogan">Gestão Inteligente</div>
+      <div class="icone">♙+</div>
+      <h1>Crie a sua<br>conta agora</h1>
+      <p class="descricao">Registe-se e comece a gerir produtos, clientes e vendas no mesmo lugar.</p>
+      <hr>
+      <p class="pergunta">Já tem conta?</p>
+      <a href="#">Fazer login →</a>
+    </section>
+
+    <section class="formulario">
+      <h2>Criar conta</h2>
+      <p class="instrucao">Preencha os dados abaixo para começar.</p>
+      <form>
+        <label for="nome">NOME COMPLETO</label>
+        <input type="text" id="nome" placeholder="O seu nome">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" placeholder="seu@email.com">
+        <label for="senha">SENHA</label>
+        <input type="password" id="senha" placeholder="Mínimo 6 caracteres">
+        <label for="tipo">TIPO DE CONTA</label>
+        <select id="tipo">
+          <option value="" selected>Selecione o tipo de conta</option>
+          <option>Administrador</option>
+          <option>Funcionário</option>
+          <option>Cliente</option>
+        </select>
+        <button type="button">Criar conta&nbsp; →</button>
+      </form>
+      <a class="voltar" href="#">← Voltar</a>
+    </section>
+  </main>
+</body>
+</html>
